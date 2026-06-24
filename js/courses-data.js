@@ -616,6 +616,39 @@ Learn:
         features: ["Google Analytics", "On/Off Page", "Certificate"],
         hot: false
     },
+        {
+        id: 39,
+        title: "AI Tools",
+        description: `Tools:
+- ChatGPT (AI writing, coding & problem solving)
+- Google Gemini (AI research & content generation)
+- Midjourney / DALL·E (AI image generation)
+- Canva AI (AI-powered design & content creation)
+- Notion AI (AI-powered notes & productivity)
+- Runway ML (AI video editing & generation)
+- ElevenLabs (AI voice & audio generation)
+- Perplexity AI (AI-powered search & research)
+
+Learn:
+- Introduction to Artificial Intelligence tools
+- Using ChatGPT for writing, coding, and automation
+- AI image generation and editing
+- AI-powered content creation for social media
+- Automating daily tasks with AI tools
+- AI tools for business and freelancing
+- Prompt engineering basics
+- Earning money using AI tools online`,
+        category: "development",
+        campus: "bahawalpur",
+        duration: "2 Months",
+        oldPrice: 8000,
+        newPrice: 4000,
+        rating: 4.9,
+        students: 180,
+        image: "assets/aitools.png",
+        features: ["ChatGPT", "AI Image Gen", "Certificate"],
+        hot: true
+    },
 
     // ========================================
     // ISLAMABAD CAMPUS — 13 COURSES
