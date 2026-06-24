@@ -25,7 +25,7 @@ Office work
         category: "business",
         campus: "bahawalpur",
         duration: "4 Months",
-        oldPrice: 7500,
+        oldPrice: 8000,
         newPrice: 5000,
         rating: 4.9,
         students: 320,
@@ -112,8 +112,8 @@ Learn:
         category: "design",
         campus: "bahawalpur",
         duration: "2 Months",
-        oldPrice: 6500,
-        newPrice: 4000,
+        oldPrice: 7000,
+        newPrice: 5000,
         rating: 4.6,
         students: 300,
         image: "assets/video_edit.jpg",
@@ -138,7 +138,7 @@ Learn:
         category: "design",
         campus: "bahawalpur",
         duration: "3 Months",
-        oldPrice: 7000,
+        oldPrice: 9000,
         newPrice: 4500,
         rating: 4.7,
         students: 210,
@@ -276,7 +276,7 @@ Learn:
         category: "development",
         campus: "bahawalpur",
         duration: "3 Months",
-        oldPrice: 8500,
+        oldPrice: 12000,
         newPrice: 6000,
         rating: 4.7,
         students: 260,
@@ -385,8 +385,8 @@ Learn:
         category: "development",
         campus: "bahawalpur",
         duration: "3 Months",
-        oldPrice: 10500,
-        newPrice: 8000,
+        oldPrice: 8000,
+        newPrice: 2500,
         rating: 4.6,
         students: 160,
         image: "assets/cyber.png",
@@ -523,7 +523,7 @@ Topic:
         category: "business",
         campus: "bahawalpur",
         duration: "3 Months",
-        oldPrice: 7500,
+        oldPrice: 15000,
         newPrice: 5000,
         rating: 4.6,
         students: 140,
@@ -644,8 +644,8 @@ Learn:
         category: "business",
         campus: "islamabad",
         duration: "2 Months",
-        oldPrice: 5500,
-        newPrice: 3000,
+        oldPrice: 8000,
+        newPrice: 5000,
         rating: 4.8,
         students: 240,
         image: "assets/freelanc.png",
@@ -669,7 +669,7 @@ Learn:
         category: "design",
         campus: "islamabad",
         duration: "2 Months",
-        oldPrice: 5500,
+        oldPrice: 6000,
         newPrice: 3000,
         rating: 4.8,
         students: 120,
@@ -697,8 +697,8 @@ Learn:
         category: "business",
         campus: "islamabad",
         duration: "3 Months",
-        oldPrice: 5500,
-        newPrice: 3000,
+        oldPrice: 15000,
+        newPrice: 4000,
         rating: 4.8,
         students: 100,
         image: "assets/ecommerce.png",
@@ -722,7 +722,7 @@ Office work:
         category: "business",
         campus: "islamabad",
         duration: "4 Months",
-        oldPrice: 5500,
+        oldPrice: 6000,
         newPrice: 3000,
         rating: 4.8,
         students: 130,
@@ -747,7 +747,7 @@ Learn:
         category: "design",
         campus: "islamabad",
         duration: "2 Months",
-        oldPrice: 5500,
+        oldPrice: 7000,
         newPrice: 3000,
         rating: 4.8,
         students: 90,
@@ -774,7 +774,7 @@ Learn:
         category: "design",
         campus: "islamabad",
         duration: "3 Months",
-        oldPrice: 5500,
+        oldPrice: 8000,
         newPrice: 3000,
         rating: 4.7,
         students: 160,
@@ -801,8 +801,8 @@ Learn:
         category: "development",
         campus: "islamabad",
         duration: "4 Months",
-        oldPrice: 5500,
-        newPrice: 3000,
+        oldPrice: 16000,
+        newPrice: 4500,
         rating: 4.8,
         students: 140,
         image: "assets/webdev.png",
@@ -854,8 +854,8 @@ Learn:
         category: "marketing",
         campus: "islamabad",
         duration: "2 Months",
-        oldPrice: 5500,
-        newPrice: 3000,
+        oldPrice: 8000,
+        newPrice: 5000,
         rating: 4.7,
         students: 80,
         image: "assets/digital.png",
@@ -876,12 +876,181 @@ Learn:
         category: "business",
         campus: "islamabad",
         duration: "2 Months",
-        oldPrice: 5500,
-        newPrice: 3000,
+        oldPrice: 4500,
+        newPrice: 3500,
         rating: 4.7,
         students: 180,
         image: "assets/office.jpg",
         features: ["Computer Basics", "Internet", "Certificate"],
         hot: false
+    },
+     {
+        id: 33,
+        title: "Youtuber Course",
+        description: `Tools:
+- Adobe Premiere Pro (video editing)
+- Adobe After Effects (motion graphics & effects)
+- Canva (thumbnails, banners, graphics)
+- OBS Studio (screen recording & live streaming)
+- TubeBuddy / VidIQ (YouTube SEO & analytics)
+- Adobe Audition (audio editing)
+
+Learn:
+- Creating and managing a YouTube channel
+- Video scripting and planning
+- Shooting videos and live streaming
+- Video editing and special effects
+- Thumbnail and banner designing
+- YouTube SEO and audience growth
+- Monetization strategies`,
+        category: "design",
+        campus: "islamabad",
+        duration: "3 Months",
+        oldPrice: 16000,
+        newPrice: 5000,
+        rating: 4.7,
+        students: 220,
+        image: "assets/youtube.png",
+        features: ["YouTube SEO", "Thumbnails", "Certificate"],
+        hot: false
+    },
+      {
+        id: 34,
+        title: "Home Architecture",
+        description: `Tools:
+• AutoCAD (2D & 3D architectural drawing)
+• Chief Architect (3D architectural drawing)
+
+Learn:
+• Home architecture and design principles
+• Floor plan creation and layout design
+• 3D modeling and interior/exterior visualization
+• Furniture, lighting, and material selection
+• Rendering and creating realistic visuals
+• Project presentation and client communication`,
+        category: "design",
+        campus: "islamabad",
+        duration: "2 Months",
+        oldPrice: 12000,
+        newPrice: 3500,
+        rating: 4.6,
+        students: 140,
+        image: "assets/architecture.png",
+        features: ["Floor Plans", "3D Visualization", "Certificate"],
+        hot: false
+    },
+     {
+        id: 35,
+        title: "App Development",
+        description: `Tools:
+• Android Studio (native Android app development)
+• Flutter (cross-platform app development)
+• Firebase (backend & database management)
+• Visual Studio Code (coding & debugging)
+
+Learn:
+• Designing user-friendly app interfaces
+• Frontend and backend integration
+• Database creation and management
+• App testing and debugging
+• Publishing apps on Google Play Store
+• Real-world app project development`,
+        category: "development",
+        campus: "islamabad",
+        duration: "3 Months",
+        oldPrice: 8000,
+        newPrice: 5000,
+        rating: 4.7,
+        students: 190,
+        image: "assets/appdev.png",
+        features: ["Flutter/Android", "Play Store", "Certificate"],
+        hot: false
+    },
+     {
+        id: 36,
+        title: "App Dev Without Coding",
+        description: `Tools:
+• Thunkable (drag-and-drop mobile app builder)
+• Appy Pie (no-code app creation platform)
+• Kodular (block-based Android app development)
+
+Learn:
+• Designing app interfaces without coding
+• Adding functionality using drag-and-drop tools
+• Database integration and app settings
+• Testing apps on mobile devices
+• Publishing apps on Google Play Store
+• Creating real-world apps for business or personal use`,
+        category: "development",
+        campus: "islamabad",
+        duration: "3 Months",
+        oldPrice: 9000,
+        newPrice: 5000,
+        rating: 4.5,
+        students: 160,
+        image: "assets/appdevwithout.png",
+        features: ["Thunkable", "Appy Pie", "Certificate"],
+        hot: false
+    },
+     {
+        id: 37,
+        title: "Internet of Thing [IOT]",
+        description: `Tools:
+• Arduino IDE (programming microcontrollers)
+• Tinkercad
+• Cirkitstudio
+• Blynk (IoT) App
+• Thunkable
+
+Learn:
+• IoT and connected devices
+• Sensors, actuators, and hardware integration
+• Data collection, analysis, and visualization
+• IoT project design and implementation
+• Connecting devices to cloud platforms
+• Real-world IoT applications`,
+        category: "development",
+        campus: "islamabad",
+        duration: "3 Months",
+        oldPrice: 11000,
+        newPrice: 5000,
+        rating: 4.8,
+        students: 110,
+        image: "assets/iot.jpg",
+        features: ["Arduino", "Blynk IoT", "Certificate"],
+        hot: false
+    },
+    {
+        id: 38,
+        title: "AI Tools",
+        description: `Tools:
+- ChatGPT (AI writing, coding & problem solving)
+- Google Gemini (AI research & content generation)
+- Midjourney / DALL·E (AI image generation)
+- Canva AI (AI-powered design & content creation)
+- Notion AI (AI-powered notes & productivity)
+- Runway ML (AI video editing & generation)
+- ElevenLabs (AI voice & audio generation)
+- Perplexity AI (AI-powered search & research)
+
+Learn:
+- Introduction to Artificial Intelligence tools
+- Using ChatGPT for writing, coding, and automation
+- AI image generation and editing
+- AI-powered content creation for social media
+- Automating daily tasks with AI tools
+- AI tools for business and freelancing
+- Prompt engineering basics
+- Earning money using AI tools online`,
+        category: "development",
+        campus: "islamabad",
+        duration: "2 Months",
+        oldPrice: 8000,
+        newPrice: 4000,
+        rating: 4.9,
+        students: 180,
+        image: "assets/aitools.png",
+        features: ["ChatGPT", "AI Image Gen", "Certificate"],
+        hot: true
     },
 ];
