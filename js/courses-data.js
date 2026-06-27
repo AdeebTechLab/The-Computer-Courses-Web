@@ -122,7 +122,7 @@ Office work
         duration: "4 Months",
         rating: 4.9,
         students: 320,
-        image: "assets/office.jpg",
+        image: "assets/office.webp",
         features: ["Live Projects", "Job Assistance", "Certificate"],
         hot: true
     },
@@ -152,7 +152,7 @@ Learn:
         duration: "1 Month",
         rating: 4.6,
         students: 450,
-        image: "assets/freelanc.png",
+        image: "assets/freelanc.webp",
         features: ["Profile Setup", "Client Communication", "Certificate"],
         hot: false
     },
@@ -180,7 +180,7 @@ Learn:
         duration: "2 Months",
         rating: 4.6,
         students: 260,
-        image: "assets/digital.png",
+        image: "assets/digital.webp",
         features: ["Google Ads", "Social Media Ads", "Certificate"],
         hot: false
     },
@@ -203,7 +203,7 @@ Learn:
         duration: "2 Months",
         rating: 4.6,
         students: 300,
-        image: "assets/video_edit.jpg",
+        image: "assets/video_edit.webp",
         features: ["YouTube Videos", "Reels & Shorts", "Certificate"],
         hot: false
     },
@@ -227,7 +227,7 @@ Learn:
         duration: "3 Months",
         rating: 4.7,
         students: 210,
-        image: "assets/graphic.jpg",
+        image: "assets/graphic.webp",
         features: ["Logo & Branding", "Social Media Design", "Certificate"],
         hot: false
     },
@@ -253,7 +253,7 @@ Learn:
         duration: "2 Months",
         rating: 4.6,
         students: 180,
-        image: "assets/ecommerce.png",
+        image: "assets/ecommerce.webp",
         features: ["Store Setup", "Product Management", "Certificate"],
         hot: false
     },
@@ -276,7 +276,7 @@ Learn:
         duration: "2 Months",
         rating: 4.7,
         students: 220,
-        image: "assets/uiux.png",
+        image: "assets/uiux.webp",
         features: ["Figma & XD", "Prototyping", "Certificate"],
         hot: false
     },
@@ -304,7 +304,7 @@ Learn:
         duration: "3 Months",
         rating: 4.7,
         students: 220,
-        image: "assets/youtube.png",
+        image: "assets/youtube.webp",
         features: ["YouTube SEO", "Thumbnails", "Certificate"],
         hot: false
     },
@@ -327,7 +327,7 @@ Learn:
         duration: "2 Months",
         rating: 4.6,
         students: 140,
-        image: "assets/architecture.png",
+        image: "assets/architecture.webp",
         features: ["Floor Plans", "3D Visualization", "Certificate"],
         hot: false
     },
@@ -355,7 +355,7 @@ Learn:
         duration: "3 Months",
         rating: 4.7,
         students: 260,
-        image: "assets/webdev.png",
+        image: "assets/webdev.webp",
         features: ["Responsive Design", "Full-Stack Basics", "Certificate"],
         hot: false
     },
@@ -380,7 +380,7 @@ Learn:
         duration: "3 Months",
         rating: 4.7,
         students: 190,
-        image: "assets/appdev.png",
+        image: "assets/appdev.webp",
         features: ["Flutter/Android", "Play Store", "Certificate"],
         hot: false
     },
@@ -404,7 +404,7 @@ Learn:
         duration: "3 Months",
         rating: 4.5,
         students: 160,
-        image: "assets/appdevwithout.png",
+        image: "assets/appdevwithout.webp",
         features: ["Thunkable", "Appy Pie", "Certificate"],
         hot: false
     },
@@ -429,7 +429,7 @@ Learn:
         duration: "2 Months",
         rating: 4.5,
         students: 680,
-        image: "assets/webdevwithout.png",
+        image: "assets/webdevwithout.webp",
         features: ["Wix", "Elementor", "Certificate"],
         hot: false
     },
@@ -456,7 +456,7 @@ Learn:
         duration: "3 Months",
         rating: 4.6,
         students: 160,
-        image: "assets/cyber.png",
+        image: "assets/cyber.webp",
         features: ["Ethical Hacking", "Network Security", "Certificate"],
         hot: false
     },
@@ -483,7 +483,7 @@ Learn:
         duration: "3 Months",
         rating: 4.5,
         students: 750,
-        image: "assets/mechine.jpg",
+        image: "assets/mechine.webp",
         features: ["Python ML", "TensorFlow/Keras", "Certificate"],
         hot: false
     },
@@ -509,7 +509,7 @@ Learn:
         duration: "3 Months",
         rating: 4.8,
         students: 110,
-        image: "assets/iot.jpg",
+        image: "assets/iot.webp",
         features: ["Arduino", "Blynk IoT", "Certificate"],
         hot: false
     },
@@ -536,7 +536,7 @@ Learn:
         duration: "3 Months",
         rating: 4.5,
         students: 290,
-        image: "assets/prog.png",
+        image: "assets/prog.webp",
         features: ["Python/Java/C++", "Projects", "Certificate"],
         hot: false
     },
@@ -561,7 +561,7 @@ Learn:
         duration: "3 Months",
         rating: 4.6,
         students: 350,
-        image: "assets/tax.png",
+        image: "assets/tax.webp",
         features: ["Tax Filing", "GST", "Certificate"],
         hot: false
     },
@@ -584,7 +584,7 @@ Topic:
         duration: "3 Months",
         rating: 4.6,
         students: 140,
-        image: "assets/trading.png",
+        image: "assets/trading.webp",
         features: ["Market Structure", "Risk Mgmt", "Certificate"],
         hot: false
     },
@@ -610,7 +610,7 @@ Learn:
         duration: "3 Months",
         rating: 4.5,
         students: 90,
-        image: "assets/truck.png",
+        image: "assets/truck.webp",
         features: ["Load Boards", "Logistics", "Certificate"],
         hot: false
     },
@@ -636,7 +636,7 @@ Learn:
         duration: "3 Months",
         rating: 4.7,
         students: 100,
-        image: "assets/softwaredev.png",
+        image: "assets/softwaredev.webp",
         features: ["SDLC", "OOP", "Certificate"],
         hot: false
     },
@@ -663,7 +663,7 @@ Learn:
         duration: "2 Months",
         rating: 4.7,
         students: 100,
-        image: "assets/seo.png",
+        image: "assets/seo.webp",
         features: ["Google Analytics", "On/Off Page", "Certificate"],
         hot: false
     },
@@ -698,7 +698,7 @@ Learn:
         duration: "2 Months",
         rating: 4.8,
         students: 240,
-        image: "assets/freelanc.png",
+        image: "assets/freelanc.webp",
         features: ["Profile Setup", "Client Communication", "Certificate"],
         hot: true
     },
@@ -721,7 +721,7 @@ Learn:
         duration: "2 Months",
         rating: 4.8,
         students: 120,
-        image: "assets/video_edit.jpg",
+        image: "assets/video_edit.webp",
         features: ["Premiere Pro", "CapCut", "Certificate"],
         hot: true
     },
@@ -747,7 +747,7 @@ Learn:
         duration: "3 Months",
         rating: 4.8,
         students: 100,
-        image: "assets/ecommerce.png",
+        image: "assets/ecommerce.webp",
         features: ["Shopify", "Store Management", "Certificate"],
         hot: true
     },
@@ -770,7 +770,7 @@ Office work:
         duration: "4 Months",
         rating: 4.8,
         students: 130,
-        image: "assets/office.jpg",
+        image: "assets/office.webp",
         features: ["MS Office", "Computer Basics", "Certificate"],
         hot: false
     },
@@ -793,7 +793,7 @@ Learn:
         duration: "2 Months",
         rating: 4.8,
         students: 90,
-        image: "assets/uiux.png",
+        image: "assets/uiux.webp",
         features: ["Figma", "Adobe XD", "Certificate"],
         hot: false
     },
@@ -818,7 +818,7 @@ Learn:
         duration: "3 Months",
         rating: 4.7,
         students: 160,
-        image: "assets/graphic.jpg",
+        image: "assets/graphic.webp",
         features: ["Photoshop", "Illustrator", "Certificate"],
         hot: false
     },
@@ -843,7 +843,7 @@ Learn:
         duration: "4 Months",
         rating: 4.8,
         students: 140,
-        image: "assets/webdev.png",
+        image: "assets/webdev.webp",
         features: ["HTML/CSS/JS", "Responsive", "Certificate"],
         hot: false
     },
@@ -867,7 +867,7 @@ Learn:
         duration: "2 Months",
         rating: 4.7,
         students: 200,
-        image: "assets/webdevwithout.png",
+        image: "assets/webdevwithout.webp",
         features: ["WordPress", "Elementor", "Certificate"],
         hot: false
     },
@@ -892,7 +892,7 @@ Learn:
         duration: "2 Months",
         rating: 4.7,
         students: 80,
-        image: "assets/digital.png",
+        image: "assets/digital.webp",
         features: ["Social Ads", "Google Ads", "Certificate"],
         hot: false
     },
@@ -912,7 +912,7 @@ Learn:
         duration: "2 Months",
         rating: 4.7,
         students: 180,
-        image: "assets/office.jpg",
+        image: "assets/office.webp",
         features: ["Computer Basics", "Internet", "Certificate"],
         hot: false
     },
@@ -940,7 +940,7 @@ Learn:
         duration: "3 Months",
         rating: 4.7,
         students: 220,
-        image: "assets/youtube.png",
+        image: "assets/youtube.webp",
         features: ["YouTube SEO", "Thumbnails", "Certificate"],
         hot: false
     },
@@ -963,7 +963,7 @@ Learn:
         duration: "2 Months",
         rating: 4.6,
         students: 140,
-        image: "assets/architecture.png",
+        image: "assets/architecture.webp",
         features: ["Floor Plans", "3D Visualization", "Certificate"],
         hot: false
     },
@@ -988,7 +988,7 @@ Learn:
         duration: "3 Months",
         rating: 4.7,
         students: 190,
-        image: "assets/appdev.png",
+        image: "assets/appdev.webp",
         features: ["Flutter/Android", "Play Store", "Certificate"],
         hot: false
     },
@@ -1012,7 +1012,7 @@ Learn:
         duration: "3 Months",
         rating: 4.5,
         students: 160,
-        image: "assets/appdevwithout.png",
+        image: "assets/appdevwithout.webp",
         features: ["Thunkable", "Appy Pie", "Certificate"],
         hot: false
     },
@@ -1038,7 +1038,7 @@ Learn:
         duration: "3 Months",
         rating: 4.8,
         students: 110,
-        image: "assets/iot.jpg",
+        image: "assets/iot.webp",
         features: ["Arduino", "Blynk IoT", "Certificate"],
         hot: false
     },
@@ -1069,7 +1069,7 @@ Learn:
         duration: "2 Months",
         rating: 4.9,
         students: 180,
-        image: "assets/aitools.png",
+        image: "assets/aitools.webp",
         features: ["ChatGPT", "AI Image Gen", "Certificate"],
         hot: true
     },
