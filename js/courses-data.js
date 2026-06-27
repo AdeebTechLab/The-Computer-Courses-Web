@@ -4,101 +4,6 @@
    Islamabad: 13 Courses
    ============================================= */
 
-/* =============================================
-   CARD STYLES — paste into your CSS file
-   =============================================
-
-.thumb-wrap {
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-}
-.thumb-wrap img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.25s ease;
-}
-.thumb-wrap:hover img {
-    transform: scale(1.05);
-}
-.enroll-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(24, 95, 165, 0.75);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-}
-.thumb-wrap:hover .enroll-overlay {
-    opacity: 1;
-}
-.enroll-overlay span {
-    color: #fff;
-    font-weight: 600;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    letter-spacing: 0.02em;
-}
-.price-portal-btn {
-    width: 100%;
-    padding: 10px 0;
-    border-radius: 8px;
-    border: 1.5px solid #378ADD;
-    background: #E6F1FB;
-    color: #185FA5;
-    font-size: 13px;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-    transition: background 0.18s, color 0.18s;
-    margin-top: 12px;
-}
-.price-portal-btn:hover {
-    background: #185FA5;
-    color: #ffffff;
-}
-
-============================================= */
-
-/* =============================================
-   CARD HTML TEMPLATE — use in your render fn
-   =============================================
-
-<div class="course-card">
-
-  <!-- Thumbnail → Enroll Now -->
-  <div class="thumb-wrap" onclick="window.open('YOUR_ENROLL_URL?id=' + course.id, '_blank')">
-    <img src="${course.image}" alt="${course.title}" />
-    <div class="enroll-overlay">
-      <span>🎓 Enroll Now</span>
-    </div>
-  </div>
-
-  <div class="card-body">
-    <h3>${course.title}</h3>
-    <p>${course.description}</p>
-    <!-- ...rating, features, etc... -->
-
-    <!-- Check Price Button -->
-    <button class="price-portal-btn"
-      onclick="window.open('YOUR_PORTAL_URL?id=' + course.id, '_blank')">
-      🏷️ Check Price on Portal
-    </button>
-  </div>
-
-</div>
-
-============================================= */
-
 const coursesData = [
     // ========================================
     // BAHAWALPUR CAMPUS — 21 COURSES
@@ -120,6 +25,8 @@ Office work
         category: "business",
         campus: "bahawalpur",
         duration: "4 Months",
+        oldPrice: 8000,
+        newPrice: 5000,
         rating: 4.9,
         students: 320,
         image: "assets/office.jpg",
@@ -150,6 +57,8 @@ Learn:
         category: "business",
         campus: "bahawalpur",
         duration: "1 Month",
+        oldPrice: 6500,
+        newPrice: 4000,
         rating: 4.6,
         students: 450,
         image: "assets/freelanc.png",
@@ -178,6 +87,8 @@ Learn:
         category: "marketing",
         campus: "bahawalpur",
         duration: "2 Months",
+        oldPrice: 7000,
+        newPrice: 4500,
         rating: 4.6,
         students: 260,
         image: "assets/digital.png",
@@ -201,6 +112,8 @@ Learn:
         category: "design",
         campus: "bahawalpur",
         duration: "2 Months",
+        oldPrice: 7000,
+        newPrice: 5000,
         rating: 4.6,
         students: 300,
         image: "assets/video_edit.jpg",
@@ -225,6 +138,8 @@ Learn:
         category: "design",
         campus: "bahawalpur",
         duration: "3 Months",
+        oldPrice: 9000,
+        newPrice: 4500,
         rating: 4.7,
         students: 210,
         image: "assets/graphic.jpg",
@@ -251,6 +166,8 @@ Learn:
         category: "business",
         campus: "bahawalpur",
         duration: "2 Months",
+        oldPrice: 9500,
+        newPrice: 7000,
         rating: 4.6,
         students: 180,
         image: "assets/ecommerce.png",
@@ -274,6 +191,8 @@ Learn:
         category: "design",
         campus: "bahawalpur",
         duration: "2 Months",
+        oldPrice: 7500,
+        newPrice: 5000,
         rating: 4.7,
         students: 220,
         image: "assets/uiux.png",
@@ -302,6 +221,8 @@ Learn:
         category: "design",
         campus: "bahawalpur",
         duration: "3 Months",
+        oldPrice: 7000,
+        newPrice: 4500,
         rating: 4.7,
         students: 220,
         image: "assets/youtube.png",
@@ -325,6 +246,8 @@ Learn:
         category: "design",
         campus: "bahawalpur",
         duration: "2 Months",
+        oldPrice: 7500,
+        newPrice: 5000,
         rating: 4.6,
         students: 140,
         image: "assets/architecture.png",
@@ -353,6 +276,8 @@ Learn:
         category: "development",
         campus: "bahawalpur",
         duration: "3 Months",
+        oldPrice: 12000,
+        newPrice: 6000,
         rating: 4.7,
         students: 260,
         image: "assets/webdev.png",
@@ -378,6 +303,8 @@ Learn:
         category: "development",
         campus: "bahawalpur",
         duration: "3 Months",
+        oldPrice: 8500,
+        newPrice: 6000,
         rating: 4.7,
         students: 190,
         image: "assets/appdev.png",
@@ -402,6 +329,8 @@ Learn:
         category: "development",
         campus: "bahawalpur",
         duration: "3 Months",
+        oldPrice: 7500,
+        newPrice: 5000,
         rating: 4.5,
         students: 160,
         image: "assets/appdevwithout.png",
@@ -427,6 +356,8 @@ Learn:
         category: "development",
         campus: "bahawalpur",
         duration: "2 Months",
+        oldPrice: 7500,
+        newPrice: 5000,
         rating: 4.5,
         students: 680,
         image: "assets/webdevwithout.png",
@@ -454,6 +385,8 @@ Learn:
         category: "development",
         campus: "bahawalpur",
         duration: "3 Months",
+        oldPrice: 8000,
+        newPrice: 2500,
         rating: 4.6,
         students: 160,
         image: "assets/cyber.png",
@@ -462,7 +395,7 @@ Learn:
     },
     {
         id: 15,
-        title: "Machine Learning",
+        title: "Machine learning",
         description: `Tools:
 • Python (programming language for ML)
 • Jupyter Notebook (interactive coding environment)
@@ -481,6 +414,8 @@ Learn:
         category: "development",
         campus: "bahawalpur",
         duration: "3 Months",
+        oldPrice: 9500,
+        newPrice: 7000,
         rating: 4.5,
         students: 750,
         image: "assets/mechine.jpg",
@@ -507,6 +442,8 @@ Learn:
         category: "development",
         campus: "bahawalpur",
         duration: "3 Months",
+        oldPrice: 10500,
+        newPrice: 8000,
         rating: 4.8,
         students: 110,
         image: "assets/iot.jpg",
@@ -534,6 +471,8 @@ Learn:
         category: "development",
         campus: "bahawalpur",
         duration: "3 Months",
+        oldPrice: 7000,
+        newPrice: 4500,
         rating: 4.5,
         students: 290,
         image: "assets/prog.png",
@@ -559,6 +498,8 @@ Learn:
         category: "business",
         campus: "bahawalpur",
         duration: "3 Months",
+        oldPrice: 10500,
+        newPrice: 8000,
         rating: 4.6,
         students: 350,
         image: "assets/tax.png",
@@ -582,6 +523,8 @@ Topic:
         category: "business",
         campus: "bahawalpur",
         duration: "3 Months",
+        oldPrice: 15000,
+        newPrice: 5000,
         rating: 4.6,
         students: 140,
         image: "assets/trading.png",
@@ -608,6 +551,8 @@ Learn:
         category: "business",
         campus: "bahawalpur",
         duration: "3 Months",
+        oldPrice: "—",
+        newPrice: "Soon",
         rating: 4.5,
         students: 90,
         image: "assets/truck.png",
@@ -634,6 +579,8 @@ Learn:
         category: "development",
         campus: "bahawalpur",
         duration: "3 Months",
+        oldPrice: "—",
+        newPrice: "Soon",
         rating: 4.7,
         students: 100,
         image: "assets/softwaredev.png",
@@ -661,13 +608,15 @@ Learn:
         category: "marketing",
         campus: "bahawalpur",
         duration: "2 Months",
+        oldPrice: 7500,
+        newPrice: 5000,
         rating: 4.7,
         students: 100,
         image: "assets/seo.png",
         features: ["Google Analytics", "On/Off Page", "Certificate"],
         hot: false
     },
-
+    
 
     // ========================================
     // ISLAMABAD CAMPUS — 13 COURSES
@@ -696,6 +645,8 @@ Learn:
         category: "business",
         campus: "islamabad",
         duration: "2 Months",
+        oldPrice: 8000,
+        newPrice: 5000,
         rating: 4.8,
         students: 240,
         image: "assets/freelanc.png",
@@ -719,6 +670,8 @@ Learn:
         category: "design",
         campus: "islamabad",
         duration: "2 Months",
+        oldPrice: 6000,
+        newPrice: 3000,
         rating: 4.8,
         students: 120,
         image: "assets/video_edit.jpg",
@@ -745,6 +698,8 @@ Learn:
         category: "business",
         campus: "islamabad",
         duration: "3 Months",
+        oldPrice: 15000,
+        newPrice: 4000,
         rating: 4.8,
         students: 100,
         image: "assets/ecommerce.png",
@@ -768,6 +723,8 @@ Office work:
         category: "business",
         campus: "islamabad",
         duration: "4 Months",
+        oldPrice: 6000,
+        newPrice: 3000,
         rating: 4.8,
         students: 130,
         image: "assets/office.jpg",
@@ -791,6 +748,8 @@ Learn:
         category: "design",
         campus: "islamabad",
         duration: "2 Months",
+        oldPrice: 7000,
+        newPrice: 3000,
         rating: 4.8,
         students: 90,
         image: "assets/uiux.png",
@@ -816,6 +775,8 @@ Learn:
         category: "design",
         campus: "islamabad",
         duration: "3 Months",
+        oldPrice: 8000,
+        newPrice: 3000,
         rating: 4.7,
         students: 160,
         image: "assets/graphic.jpg",
@@ -841,6 +802,8 @@ Learn:
         category: "development",
         campus: "islamabad",
         duration: "4 Months",
+        oldPrice: 16000,
+        newPrice: 4500,
         rating: 4.8,
         students: 140,
         image: "assets/webdev.png",
@@ -865,6 +828,8 @@ Learn:
         category: "development",
         campus: "islamabad",
         duration: "2 Months",
+        oldPrice: 5500,
+        newPrice: 3000,
         rating: 4.7,
         students: 200,
         image: "assets/webdevwithout.png",
@@ -890,6 +855,8 @@ Learn:
         category: "marketing",
         campus: "islamabad",
         duration: "2 Months",
+        oldPrice: 8000,
+        newPrice: 5000,
         rating: 4.7,
         students: 80,
         image: "assets/digital.png",
@@ -910,41 +877,45 @@ Learn:
         category: "business",
         campus: "islamabad",
         duration: "2 Months",
+        oldPrice: 4500,
+        newPrice: 3500,
         rating: 4.7,
         students: 180,
         image: "assets/office.jpg",
         features: ["Computer Basics", "Internet", "Certificate"],
         hot: false
     },
-    {
+     {
         id: 33,
         title: "Youtuber Course",
         description: `Tools:
-• Adobe Premiere Pro (video editing)
-• Adobe After Effects (motion graphics & effects)
-• Canva (thumbnails, banners, graphics)
-• OBS Studio (screen recording & live streaming)
-• TubeBuddy / VidIQ (YouTube SEO & analytics)
-• Adobe Audition (audio editing)
+- Adobe Premiere Pro (video editing)
+- Adobe After Effects (motion graphics & effects)
+- Canva (thumbnails, banners, graphics)
+- OBS Studio (screen recording & live streaming)
+- TubeBuddy / VidIQ (YouTube SEO & analytics)
+- Adobe Audition (audio editing)
 
 Learn:
-• Creating and managing a YouTube channel
-• Video scripting and planning
-• Shooting videos and live streaming
-• Video editing and special effects
-• Thumbnail and banner designing
-• YouTube SEO and audience growth
-• Monetization strategies`,
+- Creating and managing a YouTube channel
+- Video scripting and planning
+- Shooting videos and live streaming
+- Video editing and special effects
+- Thumbnail and banner designing
+- YouTube SEO and audience growth
+- Monetization strategies`,
         category: "design",
         campus: "islamabad",
         duration: "3 Months",
+        oldPrice: 16000,
+        newPrice: 5000,
         rating: 4.7,
         students: 220,
         image: "assets/youtube.png",
         features: ["YouTube SEO", "Thumbnails", "Certificate"],
         hot: false
     },
-    {
+      {
         id: 34,
         title: "Home Architecture",
         description: `Tools:
@@ -961,13 +932,15 @@ Learn:
         category: "design",
         campus: "islamabad",
         duration: "2 Months",
+        oldPrice: 12000,
+        newPrice: 3500,
         rating: 4.6,
         students: 140,
         image: "assets/architecture.png",
         features: ["Floor Plans", "3D Visualization", "Certificate"],
         hot: false
     },
-    {
+     {
         id: 35,
         title: "App Development",
         description: `Tools:
@@ -986,13 +959,15 @@ Learn:
         category: "development",
         campus: "islamabad",
         duration: "3 Months",
+        oldPrice: 8000,
+        newPrice: 5000,
         rating: 4.7,
         students: 190,
         image: "assets/appdev.png",
         features: ["Flutter/Android", "Play Store", "Certificate"],
         hot: false
     },
-    {
+     {
         id: 36,
         title: "App Dev Without Coding",
         description: `Tools:
@@ -1010,13 +985,15 @@ Learn:
         category: "development",
         campus: "islamabad",
         duration: "3 Months",
+        oldPrice: 9000,
+        newPrice: 5000,
         rating: 4.5,
         students: 160,
         image: "assets/appdevwithout.png",
         features: ["Thunkable", "Appy Pie", "Certificate"],
         hot: false
     },
-    {
+     {
         id: 37,
         title: "Internet of Thing [IOT]",
         description: `Tools:
@@ -1036,6 +1013,8 @@ Learn:
         category: "development",
         campus: "islamabad",
         duration: "3 Months",
+        oldPrice: 11000,
+        newPrice: 5000,
         rating: 4.8,
         students: 110,
         image: "assets/iot.jpg",
@@ -1046,27 +1025,29 @@ Learn:
         id: 38,
         title: "AI Tools",
         description: `Tools:
-• ChatGPT (AI writing, coding & problem solving)
-• Google Gemini (AI research & content generation)
-• Midjourney / DALL·E (AI image generation)
-• Canva AI (AI-powered design & content creation)
-• Notion AI (AI-powered notes & productivity)
-• Runway ML (AI video editing & generation)
-• ElevenLabs (AI voice & audio generation)
-• Perplexity AI (AI-powered search & research)
+- ChatGPT (AI writing, coding & problem solving)
+- Google Gemini (AI research & content generation)
+- Midjourney / DALL·E (AI image generation)
+- Canva AI (AI-powered design & content creation)
+- Notion AI (AI-powered notes & productivity)
+- Runway ML (AI video editing & generation)
+- ElevenLabs (AI voice & audio generation)
+- Perplexity AI (AI-powered search & research)
 
 Learn:
-• Introduction to Artificial Intelligence tools
-• Using ChatGPT for writing, coding, and automation
-• AI image generation and editing
-• AI-powered content creation for social media
-• Automating daily tasks with AI tools
-• AI tools for business and freelancing
-• Prompt engineering basics
-• Earning money using AI tools online`,
+- Introduction to Artificial Intelligence tools
+- Using ChatGPT for writing, coding, and automation
+- AI image generation and editing
+- AI-powered content creation for social media
+- Automating daily tasks with AI tools
+- AI tools for business and freelancing
+- Prompt engineering basics
+- Earning money using AI tools online`,
         category: "development",
         campus: "islamabad",
         duration: "2 Months",
+        oldPrice: 8000,
+        newPrice: 4000,
         rating: 4.9,
         students: 180,
         image: "assets/aitools.png",
