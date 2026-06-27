@@ -528,19 +528,14 @@
     position: relative;
     overflow: hidden;
     text-decoration: none;
-    height: 320px;
-    min-height: 320px;
     background: #0f0f0f;
 }
 
 .course-thumb-link img {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
+    height: auto;
+    object-fit: unset;
     transition: transform 0.35s ease;
 }
 
