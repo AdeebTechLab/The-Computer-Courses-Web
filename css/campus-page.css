@@ -533,8 +533,9 @@
 .course-thumb-link img {
     display: block;
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
+    object-position: center top;
     transition: transform 0.35s ease;
 }
 
@@ -579,9 +580,9 @@
 
 /* ========== COURSE CARD — CHECK PRICE BUTTON ========== */
 .course-pricing {
-    margin-top: 14px;
+    margin-top: auto;
+    padding-top: 14px;
 }
-
 .course-check-price-btn {
     display: flex;
     align-items: center;
