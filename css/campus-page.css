@@ -75,22 +75,22 @@
     background: #10b981;
 }
 
-.hero-particles span:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; animation-duration: 6s; }
-.hero-particles span:nth-child(2) { top: 20%; left: 80%; animation-delay: 1s; animation-duration: 8s; width: 4px; height: 4px; }
-.hero-particles span:nth-child(3) { top: 60%; left: 15%; animation-delay: 2s; animation-duration: 7s; width: 8px; height: 8px; }
-.hero-particles span:nth-child(4) { top: 80%; left: 70%; animation-delay: 0.5s; animation-duration: 9s; }
-.hero-particles span:nth-child(5) { top: 40%; left: 50%; animation-delay: 3s; animation-duration: 6s; width: 5px; height: 5px; }
-.hero-particles span:nth-child(6) { top: 15%; left: 40%; animation-delay: 1.5s; animation-duration: 10s; }
-.hero-particles span:nth-child(7) { top: 70%; left: 30%; animation-delay: 2.5s; animation-duration: 7s; width: 4px; height: 4px; }
-.hero-particles span:nth-child(8) { top: 50%; left: 90%; animation-delay: 0.8s; animation-duration: 8s; }
-.hero-particles span:nth-child(9) { top: 90%; left: 55%; animation-delay: 3.5s; animation-duration: 6s; width: 7px; height: 7px; }
-.hero-particles span:nth-child(10) { top: 30%; left: 20%; animation-delay: 4s; animation-duration: 9s; }
+.hero-particles span:nth-child(1)  { top: 10%; left: 10%; animation-delay: 0s;   animation-duration: 6s;  }
+.hero-particles span:nth-child(2)  { top: 20%; left: 80%; animation-delay: 1s;   animation-duration: 8s;  width: 4px; height: 4px; }
+.hero-particles span:nth-child(3)  { top: 60%; left: 15%; animation-delay: 2s;   animation-duration: 7s;  width: 8px; height: 8px; }
+.hero-particles span:nth-child(4)  { top: 80%; left: 70%; animation-delay: 0.5s; animation-duration: 9s;  }
+.hero-particles span:nth-child(5)  { top: 40%; left: 50%; animation-delay: 3s;   animation-duration: 6s;  width: 5px; height: 5px; }
+.hero-particles span:nth-child(6)  { top: 15%; left: 40%; animation-delay: 1.5s; animation-duration: 10s; }
+.hero-particles span:nth-child(7)  { top: 70%; left: 30%; animation-delay: 2.5s; animation-duration: 7s;  width: 4px; height: 4px; }
+.hero-particles span:nth-child(8)  { top: 50%; left: 90%; animation-delay: 0.8s; animation-duration: 8s;  }
+.hero-particles span:nth-child(9)  { top: 90%; left: 55%; animation-delay: 3.5s; animation-duration: 6s;  width: 7px; height: 7px; }
+.hero-particles span:nth-child(10) { top: 30%; left: 20%; animation-delay: 4s;   animation-duration: 9s;  }
 
 @keyframes particle-float {
-    0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.3; }
-    25% { transform: translate(30px, -40px) scale(1.3); opacity: 0.6; }
-    50% { transform: translate(-20px, -60px) scale(1); opacity: 0.4; }
-    75% { transform: translate(40px, -20px) scale(1.2); opacity: 0.5; }
+    0%, 100% { transform: translate(0, 0) scale(1);           opacity: 0.3; }
+    25%       { transform: translate(30px, -40px) scale(1.3);  opacity: 0.6; }
+    50%       { transform: translate(-20px, -60px) scale(1);   opacity: 0.4; }
+    75%       { transform: translate(40px, -20px) scale(1.2);  opacity: 0.5; }
 }
 
 .campus-hero-container {
@@ -320,12 +320,12 @@
 
 @keyframes blink {
     0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; }
+    50%       { opacity: 0.3; }
 }
 
 @keyframes fadeInRight {
     from { opacity: 0; transform: translateX(40px); }
-    to { opacity: 1; transform: translateX(0); }
+    to   { opacity: 1; transform: translateX(0); }
 }
 
 /* ========== CATEGORY CARDS ========== */
@@ -402,11 +402,11 @@
     transform: scale(1.1) rotate(5deg);
 }
 
-.cat-dev { background: rgba(99, 102, 241, 0.1); color: #6366f1; }
-.cat-design { background: rgba(236, 72, 153, 0.1); color: #ec4899; }
-.cat-marketing { background: rgba(245, 158, 11, 0.1); color: #f59e0b; }
-.cat-data { background: rgba(16, 185, 129, 0.1); color: #10b981; }
-.cat-business { background: rgba(59, 130, 246, 0.1); color: #3b82f6; }
+.cat-dev      { background: rgba(99, 102, 241, 0.1); color: #6366f1; }
+.cat-design   { background: rgba(236, 72, 153, 0.1);  color: #ec4899; }
+.cat-marketing{ background: rgba(245, 158, 11, 0.1);  color: #f59e0b; }
+.cat-data     { background: rgba(16, 185, 129, 0.1);  color: #10b981; }
+.cat-business { background: rgba(59, 130, 246, 0.1);  color: #3b82f6; }
 
 .category-card h4 {
     font-size: 0.85rem;
@@ -517,6 +517,138 @@
     background: linear-gradient(135deg, #10b981, #06b6d4) !important;
 }
 
+/* ========== COURSE CARD — THUMBNAIL ENROLL OVERLAY ========== */
+.course-card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.course-thumb-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.course-thumb-link img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.course-thumb-link:hover img {
+    transform: scale(1.06);
+}
+
+.course-thumb-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(24, 95, 165, 0.78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.course-thumb-link:hover .course-thumb-overlay {
+    opacity: 1;
+}
+
+.course-thumb-enroll-btn {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 24px;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    transition: background 0.2s ease;
+}
+
+.course-thumb-link:hover .course-thumb-enroll-btn {
+    background: rgba(255, 255, 255, 0.28);
+}
+
+/* ========== COURSE CARD — CHECK PRICE BUTTON ========== */
+.course-pricing {
+    margin-top: 14px;
+}
+
+.course-check-price-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 11px 0;
+    border-radius: 8px;
+    border: 1.5px solid #378ADD;
+    background: #E6F1FB;
+    color: #185FA5;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.course-check-price-btn:hover {
+    background: #185FA5;
+    color: #ffffff;
+    border-color: #185FA5;
+    transform: translateY(-2px);
+}
+
+.course-check-price-btn i {
+    font-size: 13px;
+}
+
+/* Islamabad campus variant — teal/green to match campus theme */
+.course-check-price-btn.isb-price-btn {
+    border-color: #10b981;
+    background: rgba(16, 185, 129, 0.08);
+    color: #065f46;
+}
+
+.course-check-price-btn.isb-price-btn:hover {
+    background: #10b981;
+    color: #ffffff;
+    border-color: #10b981;
+}
+
+/* ========== DARK MODE SUPPORT ========== */
+[data-theme="dark"] .course-check-price-btn {
+    background: rgba(55, 138, 221, 0.12);
+    color: #93c5fd;
+    border-color: #378ADD;
+}
+
+[data-theme="dark"] .course-check-price-btn:hover {
+    background: #185FA5;
+    color: #ffffff;
+    border-color: #185FA5;
+}
+
+[data-theme="dark"] .course-check-price-btn.isb-price-btn {
+    background: rgba(16, 185, 129, 0.12);
+    color: #6ee7b7;
+    border-color: #10b981;
+}
+
+[data-theme="dark"] .course-check-price-btn.isb-price-btn:hover {
+    background: #10b981;
+    color: #ffffff;
+    border-color: #10b981;
+}
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 1024px) {
     .campus-hero-container {
@@ -614,5 +746,10 @@
 
     .mini-stat {
         width: 100%;
+    }
+
+    .course-check-price-btn {
+        font-size: 13px;
+        padding: 10px 0;
     }
 }

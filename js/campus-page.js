@@ -88,7 +88,7 @@ function initCampusPage(campusName) {
 
     function renderCourses(category = 'all') {
         let filtered = campusCourses;
-        
+
         if (category !== 'all') {
             filtered = filtered.filter(c => c.category === category);
         }
@@ -106,7 +106,6 @@ function initCampusPage(campusName) {
         const isIslamabad = campusName === 'islamabad';
 
         coursesGrid.innerHTML = filtered.map((course, index) => {
-            const discount = Math.round(((course.oldPrice - course.newPrice) / course.oldPrice) * 100);
             const starsHTML = generateStars(course.rating);
             const featuresHTML = course.features.map(f => `
                 <span class="course-feature">
@@ -116,20 +115,28 @@ function initCampusPage(campusName) {
 
             const campusLabel = capitalize(course.campus);
             const badgeCampusClass = isIslamabad ? 'badge-campus-isb' : 'badge-campus';
+            const enrollUrl = 'https://lms-adeeb-technology-lab.vercel.app/register/student';
 
             return `
                 <div class="course-card" style="animation-delay: ${index * 0.07}s">
                     <div class="course-card-image">
-                        <img src="${course.image}" alt="${course.title}" loading="lazy" 
-                             onerror="this.src='https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop'">
+                        <a href="${enrollUrl}" target="_blank" rel="noopener noreferrer" class="course-thumb-link" title="Enroll in ${course.title}">
+                            <img src="${course.image}" alt="${course.title}" loading="lazy"
+                                 onerror="this.src='https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop'">
+                            <div class="course-thumb-overlay">
+                                <span class="course-thumb-enroll-btn">
+                                    <i class="fas fa-user-graduate"></i> Enroll Now
+                                </span>
+                            </div>
+                        </a>
                         <div class="course-card-shine"></div>
                         <div class="course-badges">
                             <span class="badge ${badgeCampusClass}">
                                 <i class="fas fa-map-marker-alt"></i> ${campusLabel}
                             </span>
-                            ${course.hot 
-                                ? '<span class="badge badge-hot"><i class="fas fa-fire"></i> HOT</span>' 
-                                : `<span class="badge badge-discount">${discount}% OFF</span>`
+                            ${course.hot
+                                ? '<span class="badge badge-hot"><i class="fas fa-fire"></i> HOT</span>'
+                                : '<span class="badge badge-discount"><i class="fas fa-tag"></i> Enroll Now</span>'
                             }
                         </div>
                         <div class="course-duration">
@@ -152,12 +159,10 @@ function initCampusPage(campusName) {
                             ${featuresHTML}
                         </div>
                         <div class="course-pricing">
-                            <div class="price-wrapper">
-                                <span class="old-price">Rs. ${course.oldPrice.toLocaleString()}</span>
-                                <span class="new-price ${isIslamabad ? 'isb-price' : ''}">Rs. ${course.newPrice.toLocaleString()}</span>
-                            </div>
-                            <a href="https://lms-adeeb-technology-lab.vercel.app/register/student" class="course-enroll-btn ${isIslamabad ? 'isb-enroll' : ''}" target="_blank">
-                                Enroll Now <i class="fas fa-arrow-right"></i>
+                            <a href="${enrollUrl}"
+                               class="course-check-price-btn ${isIslamabad ? 'isb-price-btn' : ''}"
+                               target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-tag"></i> Check Price on Portal
                             </a>
                         </div>
                     </div>
@@ -250,14 +255,12 @@ function initCampusPage(campusName) {
     window.filterByCategory = function(category) {
         activeCategory = category;
 
-        // Update active state
         document.querySelectorAll('.category-card').forEach(card => {
             card.classList.toggle('active', card.dataset.filter === category);
         });
 
         renderCourses(category);
 
-        // Smooth scroll to courses
         setTimeout(() => {
             document.getElementById('courses').scrollIntoView({ behavior: 'smooth' });
         }, 100);
@@ -270,7 +273,6 @@ function initCampusPage(campusName) {
             contactSection.scrollIntoView({ behavior: 'smooth' });
 
             setTimeout(() => {
-                // Try to select the course
                 const select = document.getElementById('courseInterest');
                 if (select) {
                     const options = select.options;
@@ -285,7 +287,6 @@ function initCampusPage(campusName) {
                 if (nameInput) nameInput.focus();
             }, 800);
         } else {
-            // Fallback if contact section is missing
             alert(`To enroll in ${courseName}, please contact us directly.`);
         }
     };
