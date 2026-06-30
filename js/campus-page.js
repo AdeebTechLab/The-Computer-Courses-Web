@@ -130,21 +130,11 @@ function initCampusPage(campusName) {
                             </div>
                         </a>
                         <div class="course-card-shine"></div>
-                        <div class="course-badges">
-                            <span class="badge ${badgeCampusClass}">
-                                <i class="fas fa-map-marker-alt"></i> ${campusLabel}
-                            </span>
-                            ${course.hot
-                                ? '<span class="badge badge-hot"><i class="fas fa-fire"></i> HOT</span>'
-                                : '<span class="badge badge-discount"><i class="fas fa-tag"></i> Enroll Now</span>'
-                            }
-                        </div>
                         <div class="course-duration">
                             <i class="far fa-clock"></i> ${course.duration}
                         </div>
                     </div>
                     <div class="course-card-body">
-                        <span class="course-category-tag ${isIslamabad ? 'isb-tag' : ''}">${capitalize(course.category)}</span>
                         <h3>${course.title}</h3>
                         <p class="course-desc">${course.description}</p>
                         <button class="desc-toggle" aria-expanded="false" title="Read more">

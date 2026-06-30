@@ -754,3 +754,10 @@
         padding: 10px 0;
     }
 }
+
+@media (max-width: 380px) {
+    .campus-hero-title { font-size: 1.7rem; }
+    .campus-hero-stats { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .category-cards { grid-template-columns: 1fr 1fr; }
+    .campus-info-card { padding: 20px; }
+}
