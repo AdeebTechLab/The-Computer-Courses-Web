@@ -91,7 +91,7 @@
     <!-- Check Price Button -->
     <button class="price-portal-btn"
       onclick="window.open('YOUR_PORTAL_URL?id=' + course.id, '_blank')">
-      🏷️ Check Price on Portal
+      🏷️ Check Price on LMS
     </button>
   </div>
 
