@@ -152,7 +152,7 @@ function initCampusPage(campusName) {
                             <a href="${enrollUrl}"
                                class="course-check-price-btn ${isIslamabad ? 'isb-price-btn' : ''}"
                                target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-tag"></i> Check Price on Portal
+                                <i class="fas fa-tag"></i> Check Price on LMS
                             </a>
                         </div>
                     </div>
