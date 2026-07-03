@@ -66,8 +66,8 @@
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-body { font-family: var(--font-primary); background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; transition: background 0.4s ease, color 0.4s ease; overflow-x: hidden; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; max-width: 100%; overflow-x: hidden; }
+body { font-family: var(--font-primary); background: var(--bg-primary); color: var(--text-primary); line-height: 1.6; transition: background 0.4s ease, color 0.4s ease; overflow-x: hidden; max-width: 100%; }
 h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); font-weight: 700; line-height: 1.2; }
 a { text-decoration: none; color: inherit; transition: var(--transition); }
 img { max-width: 100%; display: block; }
@@ -98,7 +98,7 @@ ul { list-style: none; }
 .navbar.scrolled { padding: 10px 0; border-bottom-color: var(--border-color); box-shadow: var(--shadow-sm); }
 .nav-container { display: flex; align-items: center; justify-content: space-between; }
 .logo { display: flex; align-items: center; gap: 10px; z-index: 101; }
-.logo-icon { width: 42px; height: 42px; background: var(--gradient-primary); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.1rem; }
+.logo-icon { width: 42px; height: 42px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.1rem; overflow: hidden; border: 2px solid var(--bg-card); box-shadow: 0 2px 8px rgba(0,0,0,0.12); }
 .logo-text { display: flex; flex-direction: column; line-height: 1.2; }
 .logo-name { font-family: var(--font-heading); font-weight: 700; font-size: 1.05rem; color: var(--text-primary); }
 .logo-sub { font-weight: 600; font-size: 0.75rem; color: var(--primary); letter-spacing: 2px; text-transform: uppercase; }
@@ -182,9 +182,13 @@ ul { list-style: none; }
     width: 200px;
     height: 200px;
     background: none !important;
+    border: none !important;
     box-shadow: none !important;
     animation: none !important;
     z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .floating-card {
@@ -201,25 +205,25 @@ ul { list-style: none; }
     font-size: 0.82rem;
     white-space: nowrap;
     z-index: 4;
+    transform: translate(-50%, -50%);
     animation: float-card 6s ease-in-out infinite;
 }
 
 .floating-card i { font-size: 1.1rem; color: var(--primary); }
 
-.fc-1  { top: calc(50% - 178px); left: calc(50% - 50px);  animation-delay: 0s;   }
-.fc-2  { top: calc(50% - 22px);  left: calc(50% + 130px); animation-delay: 1s;   }
-.fc-3  { top: calc(50% + 100px); left: calc(50% + 55px);  animation-delay: 2s;   }
-.fc-4  { top: calc(50% + 100px); left: calc(50% - 155px); animation-delay: 3s;   }
-.fc-5  { top: calc(50% - 22px);  left: calc(50% - 215px); animation-delay: 1.5s; }
-.fc-6  { top: calc(50% - 255px); left: calc(50% + 95px);  animation-delay: 0.5s; }
-.fc-7  { top: calc(50% + 5px);   left: calc(50% + 215px); animation-delay: 1.2s; }
-.fc-8  { top: calc(50% + 210px); left: calc(50% - 65px);  animation-delay: 2.2s; }
-.fc-9  { top: calc(50% + 5px);   left: calc(50% - 300px); animation-delay: 0.8s; }
-.fc-10 { top: calc(50% - 255px); left: calc(50% - 190px); animation-delay: 1.8s; }
+/* 8 badges evenly spaced 45deg apart on a 220px-radius circle around the central logo */
+.fc-1  { top: calc(50% - 220px); left: calc(50% + 0px);   animation-delay: 0s;   }
+.fc-2  { top: calc(50% - 156px); left: calc(50% + 156px); animation-delay: 1s;   }
+.fc-3  { top: calc(50% + 0px);   left: calc(50% + 220px); animation-delay: 2s;   }
+.fc-4  { top: calc(50% + 156px); left: calc(50% + 156px); animation-delay: 3s;   }
+.fc-5  { top: calc(50% + 220px); left: calc(50% + 0px);   animation-delay: 1.5s; }
+.fc-6  { top: calc(50% + 156px); left: calc(50% - 156px); animation-delay: 0.5s; }
+.fc-8  { top: calc(50% + 0px);   left: calc(50% - 220px); animation-delay: 2.2s; }
+.fc-10 { top: calc(50% - 156px); left: calc(50% - 156px); animation-delay: 1.8s; }
 
 @keyframes float-card {
-    0%, 100% { transform: translateY(0px); }
-    50%       { transform: translateY(-12px); }
+    0%, 100% { transform: translate(-50%, -50%); }
+    50%       { transform: translate(-50%, calc(-50% - 12px)); }
 }
 
 .hero-wave { position: absolute; bottom: -2px; left: 0; right: 0; z-index: 1; }
@@ -471,6 +475,24 @@ ul { list-style: none; }
     .testimonials-marquee { --testimonial-card-width: 320px; }
     .contact-grid { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* NAV OVERFLOW FIX: the full desktop nav (logo + 8 links + LMS button) needs
+   roughly 1230px of container width. Below that (real tablets, small laptop
+   windows, and phones using "Desktop site" mode which report ~980-1024px)
+   switch to the hamburger menu instead of letting the navbar overflow/wrap. */
+@media (max-width: 1180px) {
+    .nav-links { position: fixed; top: 0; bottom: 0; right: 0; width: min(340px, 86vw); height: 100vh; min-height: 100dvh; background: var(--bg-card); border-left: 1px solid var(--border-color); box-shadow: -12px 0 40px rgba(15,23,42,0.18), 0 0 0 100vmax rgba(2,6,23,0.35); flex-direction: column; justify-content: flex-start; align-items: stretch; gap: 8px; padding: 96px 20px 28px; opacity: 0; visibility: hidden; transform: translateX(100%); transition: transform 0.32s ease, opacity 0.2s ease, visibility 0.2s ease; z-index: 100; }
+    .nav-links.active { opacity: 1; visibility: visible; transform: translateX(0); }
+    .nav-links .nav-link { display: block; font-size: 1.02rem; font-weight: 600; padding: 12px 14px; border-radius: 12px; border: 1px solid transparent; }
+    .nav-links .nav-link:hover, .nav-links .nav-link.active { border-color: var(--border-color); }
+    .hamburger { display: flex; }
+    .nav-cta { display: inline-flex; padding: 8px 14px; font-size: 0.8rem; }
+    .logo { gap: 7px; flex-shrink: 1; min-width: 0; }
+    .logo-text { min-width: 0; }
+    .logo-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .logo-sub  { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .nav-actions { gap: 7px; flex-shrink: 0; }
 }
 
 @media (max-width: 768px) {
