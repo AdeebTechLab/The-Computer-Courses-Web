@@ -30,6 +30,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById('navbar');
     const backToTop = document.getElementById('backToTop');
 
+    // Keep --navbar-height in sync with the real rendered navbar height
+    // so fixed navbar never overlaps the content below it (e.g. when the
+    // logo text wraps to two lines on narrower desktop widths).
+    function syncNavbarHeight() {
+        if (!navbar) return;
+        const height = navbar.offsetHeight;
+        if (height > 0) {
+            document.documentElement.style.setProperty('--navbar-height', height + 'px');
+        }
+    }
+    syncNavbarHeight();
+    window.addEventListener('resize', syncNavbarHeight);
+    window.addEventListener('load', syncNavbarHeight);
+    if (window.ResizeObserver) {
+        new ResizeObserver(syncNavbarHeight).observe(navbar);
+    }
+
     window.addEventListener('scroll', () => {
         const scrollY = window.scrollY;
 

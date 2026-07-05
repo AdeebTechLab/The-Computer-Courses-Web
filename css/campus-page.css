@@ -28,7 +28,7 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    padding-top: var(--navbar-height, 96px);
     overflow: hidden;
 }
 
