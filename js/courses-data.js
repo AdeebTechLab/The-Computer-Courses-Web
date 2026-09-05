@@ -106,6 +106,7 @@ const coursesData = [
     {
         id: 1,
         title: "Office Work (IT)",
+        price: 4000,
         description: `IT
 • computer knowledge
 • Windows installation and settings
@@ -129,6 +130,7 @@ Office work
     {
         id: 2,
         title: "Freelancing",
+        price: 4000,
         description: `Tools:
 • Upwork
 • Fiverr
@@ -159,6 +161,7 @@ Learn:
     {
         id: 3,
         title: "Digital Marketing, Ads",
+        price: 4500,
         description: `Tools:
 • Google Ads (search & display advertising)
 • Facebook & Instagram Ads Manager (social media advertising)
@@ -187,6 +190,7 @@ Learn:
     {
         id: 4,
         title: "Video Editing",
+        price: 5000,
         description: `Tools:
 • Adobe Premiere Pro
 • CapCut
@@ -210,6 +214,7 @@ Learn:
     {
         id: 5,
         title: "Graphic Designer",
+        price: 4500,
         description: `Tools:
 • Adobe Photoshop
 • Adobe Illustrator
@@ -234,6 +239,7 @@ Learn:
     {
         id: 6,
         title: "E-Commerce",
+        price: 4500,
         description: `Tools:
 • Shopify (online store creation)
 • WooCommerce (WordPress e-commerce plugin)
@@ -260,6 +266,7 @@ Learn:
     {
         id: 7,
         title: "UX/UI Designing",
+        price: 5000,
         description: `Tools:
 • Figma
 • Adobe XD
@@ -283,6 +290,7 @@ Learn:
     {
         id: 8,
         title: "Youtuber Course",
+        price: 4500,
         description: `Tools:
 • Adobe Premiere Pro (video editing)
 • Adobe After Effects (motion graphics & effects)
@@ -311,6 +319,7 @@ Learn:
     {
         id: 9,
         title: "Home Architecture",
+        price: 4000,
         description: `Tools:
 • AutoCAD (2D & 3D architectural drawing)
 • Chief Architect (3D architectural drawing)
@@ -334,6 +343,7 @@ Learn:
     {
         id: 10,
         title: "Web Development",
+        price: 4500,
         description: `Tools:
 • HTML, CSS, JavaScript (frontend development)
 • WordPress and WIX
@@ -362,6 +372,7 @@ Learn:
     {
         id: 11,
         title: "App Development",
+        price: 6000,
         description: `Tools:
 • Android Studio (native Android app development)
 • Flutter (cross-platform app development)
@@ -387,6 +398,7 @@ Learn:
     {
         id: 12,
         title: "App Dev Without Coding",
+        price: 5000,
         description: `Tools:
 • Thunkable (drag-and-drop mobile app builder)
 • Appy Pie (no-code app creation platform)
@@ -411,6 +423,7 @@ Learn:
     {
         id: 13,
         title: "Web Dev Without Coding",
+        price: 5000,
         description: `Tools:
 • Wix (drag-and-drop website builder)
 • WordPress (website creation with themes & plugins)
@@ -436,6 +449,7 @@ Learn:
     {
         id: 14,
         title: "Cyber Security",
+        price: 4500,
         description: `Tools:
 • Kali Linux (penetration testing & ethical hacking)
 • Wireshark (network monitoring & analysis)
@@ -463,6 +477,7 @@ Learn:
     {
         id: 15,
         title: "Machine Learning",
+        price: 5000,
         description: `Tools:
 • Python (programming language for ML)
 • Jupyter Notebook (interactive coding environment)
@@ -490,6 +505,7 @@ Learn:
     {
         id: 16,
         title: "Internet of Thing [IOT]",
+        price: 6000,
         description: `Tools:
 • Arduino IDE (programming microcontrollers)
 • Tinkercad
@@ -516,6 +532,7 @@ Learn:
     {
         id: 17,
         title: "Programming",
+        price: 5500,
         description: `Tools:
 • Python (general-purpose programming & projects)
 • C / C++ (fundamentals and problem-solving)
@@ -543,6 +560,7 @@ Learn:
     {
         id: 18,
         title: "Taxation",
+        price: 4500,
         description: `Tools:
 • Tally ERP / Tally Prime (accounting and GST management)
 • QuickBooks (financial accounting and reporting)
@@ -568,6 +586,7 @@ Learn:
     {
         id: 19,
         title: "Trading",
+        price: 5000,
         description: `Platform:
 • Mt5, Deriv Trading view
 
@@ -591,6 +610,7 @@ Topic:
     {
         id: 20,
         title: "Truck Dispatching",
+        price: 4500,
         description: `Tools:
 • TruckStop.com / DAT Load Board (finding and managing loads)
 • McLeod Software (transportation management)
@@ -617,6 +637,7 @@ Learn:
     {
         id: 21,
         title: "Software Development",
+        price: 6000,
         description: `Tools:
 • Java / C# / C++ (object-oriented programming & software projects)
 • Visual Studio / VS Code (IDE for development)
@@ -643,6 +664,7 @@ Learn:
     {
         id: 22,
         title: "SEO",
+        price: 4500,
         description: `Tools:
 • Google Search Console (website performance & indexing)
 • Google Analytics (traffic analysis & reporting)
@@ -675,6 +697,7 @@ Learn:
     {
         id: 23,
         title: "Freelancing",
+        price: 5000,
         description: `Tools:
 • Upwork
 • Fiverr
@@ -705,6 +728,7 @@ Learn:
     {
         id: 24,
         title: "Video Editing",
+        price: 3500,
         description: `Tools:
 • Adobe Premiere Pro
 • CapCut
@@ -728,6 +752,7 @@ Learn:
     {
         id: 25,
         title: "E-Commerce",
+        price: 4000,
         description: `Tools:
 • Shopify (online store creation)
 • WooCommerce (WordPress e-commerce plugin)
@@ -754,6 +779,7 @@ Learn:
     {
         id: 26,
         title: "Office Work (IT)",
+        price: 3500,
         description: `IT:
 • Computer knowledge
 • Windows installation and settings
@@ -777,6 +803,7 @@ Office work:
     {
         id: 27,
         title: "UX/UI Designing",
+        price: 3000,
         description: `Tools:
 • Figma
 • Adobe XD
@@ -800,6 +827,7 @@ Learn:
     {
         id: 28,
         title: "Graphic Designing",
+        price: 3500,
         description: `Tools:
 • Adobe Photoshop
 • Adobe Illustrator
@@ -825,6 +853,7 @@ Learn:
     {
         id: 29,
         title: "Web Development",
+        price: 4500,
         description: `Tools:
 • HTML
 • CSS
@@ -850,6 +879,7 @@ Learn:
     {
         id: 30,
         title: "WordPress Development",
+        price: 5500,
         description: `Tools:
 • WordPress
 • Elementor
@@ -874,6 +904,7 @@ Learn:
     {
         id: 31,
         title: "Digital Marketing",
+        price: 5000,
         description: `Tools:
 • Facebook Ads
 • Instagram Marketing
@@ -899,6 +930,7 @@ Learn:
     {
         id: 32,
         title: "Basic Computer Course",
+        price: 3500,
         description: `Learn:
 • Computer introduction
 • Windows basics
@@ -919,6 +951,7 @@ Learn:
     {
         id: 33,
         title: "Youtuber Course",
+        price: 5000,
         description: `Tools:
 • Adobe Premiere Pro (video editing)
 • Adobe After Effects (motion graphics & effects)
@@ -947,6 +980,7 @@ Learn:
     {
         id: 34,
         title: "Home Architecture",
+        price: 3500,
         description: `Tools:
 • AutoCAD (2D & 3D architectural drawing)
 • Chief Architect (3D architectural drawing)
@@ -970,6 +1004,7 @@ Learn:
     {
         id: 35,
         title: "App Development",
+        price: 6000,
         description: `Tools:
 • Android Studio (native Android app development)
 • Flutter (cross-platform app development)
@@ -995,6 +1030,7 @@ Learn:
     {
         id: 36,
         title: "App Dev Without Coding",
+        price: 5000,
         description: `Tools:
 • Thunkable (drag-and-drop mobile app builder)
 • Appy Pie (no-code app creation platform)
@@ -1019,6 +1055,7 @@ Learn:
     {
         id: 37,
         title: "Internet of Thing [IOT]",
+        price: 5000,
         description: `Tools:
 • Arduino IDE (programming microcontrollers)
 • Tinkercad
@@ -1045,6 +1082,7 @@ Learn:
     {
         id: 38,
         title: "AI Tools",
+        price: 4500,
         description: `Tools:
 • ChatGPT (AI writing, coding & problem solving)
 • Google Gemini (AI research & content generation)

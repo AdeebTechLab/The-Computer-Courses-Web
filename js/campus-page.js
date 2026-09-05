@@ -153,6 +153,10 @@ function initCampusPage(campusName) {
                     </div>
                     <div class="course-card-body">
                         <h3>${course.title}</h3>
+                        <div class="course-monthly-price">
+    <span>Rs. ${course.price.toLocaleString()}</span>
+    <small>/ month</small>
+</div>
                         <p class="course-desc">${course.description}</p>
                         <button class="desc-toggle" aria-expanded="false" title="Read more">
                             <span class="desc-toggle-label">Read more</span>
@@ -169,7 +173,7 @@ function initCampusPage(campusName) {
                             <a href="${enrollUrl}"
                                class="course-check-price-btn ${isIslamabad ? 'isb-price-btn' : ''}"
                                target="_blank" rel="noopener noreferrer">
-                                <i class="fas fa-tag"></i> Check Price on LMS
+                                <i class="fas fa-tag"></i> Check Updated Price on LMS
                             </a>
                         </div>
                     </div>
