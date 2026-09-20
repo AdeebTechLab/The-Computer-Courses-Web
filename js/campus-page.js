@@ -132,7 +132,7 @@ function initCampusPage(campusName) {
 
             const campusLabel = capitalize(course.campus);
             const badgeCampusClass = isIslamabad ? 'badge-campus-isb' : 'badge-campus';
-            const enrollUrl = 'https://lms-adeeb-technology-lab.vercel.app/register/student';
+            const enrollUrl = 'https://adeebtechhub.online/register/student';
 
             return `
                 <div class="course-card" style="animation-delay: ${index * 0.07}s">
